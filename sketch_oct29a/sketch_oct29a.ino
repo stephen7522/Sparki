@@ -1,17 +1,18 @@
 #include <Sparki.h>
-int x=1;
+
 void setup() {
-  // put your setup code here, to run once:
-sparki.clearLCD();
-sparki.println(x);
+  for (int x=1; x < 1; x++) 
+  {
+ sparki.clearLCD();
+sparki.print(x);
 sparki.updateLCD();
-delay(1000);
+delay(1000);}
 }
 
 void loop() {
-  (x++)*(x++);
-sparki.println((x++)*(x++));
+  for (int x=1; x < 11; x++) 
+  {
+sparki.println(x*x);
 sparki.updateLCD();
-delay(1000);
-  // put your main code here, to run repeatedly:
+delay(1000);}
 }
